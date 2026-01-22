@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Ransom Announce</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="compose" class="card hidden">
+    <div class="card-head">
+      <h1 id="title">City Announcements</h1>
+    </div>
+    <div class="card-body">
+      <label>Category</label>
+      <select id="category"></select>
+
+      <label>Message</label>
+      <textarea id="message" maxlength="300" placeholder="Describe your business, promo, hours, location..."></textarea>
+
+      <div class="row">
+        <div class="col">
+          <label>Image URL (optional)</label>
+          <input id="image" type="url" placeholder="https://example.com/promo.png">
+        </div>
+        <div class="col right"><span id="count">0 / 300</span></div>
+      </div>
+
+      <div class="row">
+        <div class="col">
+          <label>Postal (optional)</label>
+          <input id="postal" type="text" maxlength="10" placeholder="1234">
+        </div>
+      </div>
+
+      <div class="actions">
+        <button id="cancel" class="btn ghost">Cancel</button>
+        <button id="send" class="btn primary">Post Announcement</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="banner" class="banner hidden">
+    <div class="badge">Announcement</div>
+    <div class="content">
+      <div class="top">
+        <span id="bCat" class="chip"></span>
+        <span id="bWho" class="who"></span>
+      </div>
+      <div id="bMsg" class="msg"></div>
+    </div>
+    <img id="bImg" class="pic hidden" alt="">
+  </div>
+
+  <div id="trail-layer"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
