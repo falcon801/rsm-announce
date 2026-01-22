@@ -31,7 +31,7 @@ All rights reserved.
 Discord- tittydust
 
 
-If you like the script, don’t be weird — give credit.
+If you like the script, don’t be weird,  give credit.
 
 ---
 
